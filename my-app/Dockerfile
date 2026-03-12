@@ -6,7 +6,7 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
-RUN npm run build        # ← THIS was missing — generates /app/dist
+RUN npm run build        
 
 # Production stage
 FROM nginx:alpine
