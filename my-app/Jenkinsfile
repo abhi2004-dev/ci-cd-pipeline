@@ -4,7 +4,7 @@ pipeline{
     stages{
         stage('build docker image'){
             steps{
-                bat 'docker build --no-cache -t vite.app .'
+                bat 'docker build --no-cache -t vite.app my-app'
             }
         }
         stage('deploy container'){
